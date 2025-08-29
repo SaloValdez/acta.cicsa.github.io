@@ -1,0 +1,614 @@
+
+@font-face{
+    font-family: 'bolde';
+    src: url(font/araboto/ArabotoBold.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+@font-face{
+    font-family: 'OpenRegular';
+    src:url(/font/OpenSans/OpenSans-Regular.ttf);
+    /* font-weight: bol; */
+}
+:root {
+    --bordes: #6ee930;
+    --contenido: #f969ce;
+
+  }
+  
+
+
+body{
+    font-size: 11px;
+    font-family: 'OpenRegular';
+    /* font-weight: bold; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+textarea{
+    font-family: 'OpenRegular';
+    font-size: 13px;
+    border: 1px solid black;
+    resize:inherit;
+    overflow: auto;
+}
+input[type=text]{
+    font-size: 13px;
+    /* border: 1px solid black; */
+    text-transform: uppercase;
+}
+
+input[type=text]:focus{
+    background-color: #faf6b2;
+}
+
+textarea:focus{
+    background-color: #faf6b2;
+}
+
+.tabla thead td {
+    text-align: center;
+}
+
+#fondo{
+   
+    width: 950px;
+    border: 1px solid black;
+    height: 1290px;
+    /* background-image: url(../img/acta/acta_esquema.png); */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-color: aqua; */
+    padding: 10px;
+    /* padding-bottom: 40px; */
+    
+}
+
+.cabecera{
+width: 100%;
+height: 230px;
+/* border: 1px solid var(--contenido); */
+display: flex;
+}
+
+.cabecera .cabecera_izquierda{
+    width: 750px;
+    height: 230px;
+    /* border: 1px solid red; */
+}
+
+.cabecera .cabecera_derecha{
+    width: 190px;
+    height: 230px;
+    /* border: 1px solid red; */
+}
+.cabecera .titulo{
+    /* background-color: rgba(127, 255, 212, 0.444); */
+    /* border: 1px solid black; */
+    height: 100px;
+    display: flex;
+}
+.cabecera .titulo_acta{
+    /* background-color: #6ee93065; */
+    width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cabecera .numero_acta{
+    width: 300px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 63px;
+    /* border: 1px solid rgb(0, 4, 255); */
+}
+
+.cabecera .titulo_info_cliente{
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 13px;
+}
+.cabecera .fila1{
+    padding-top: 20px;
+    display: flex;
+}
+
+
+.cabecera .cont_text{
+    /* background-color: #6ee9309c; */
+    display: flex;
+}
+
+.cabecera .cont_text .label{
+ font-size: 13px;
+ padding-top: 2px;
+}
+
+.content_plan{
+    margin-left: 15px !important;
+    /* border: 1px solid red; */
+    width: 350px !important;
+}
+
+.content_plan .line_text{
+    width: 350px;
+    text-transform: lowercase;
+}
+.cont_text input{
+    border: 1px solid black;
+    width: 355px; 
+    margin-left: 10px;
+    font-size: 13px;
+    /* background-color: #6ee93044; */
+    margin-right: 3px;
+    height: 17px;
+}
+.cabecera .cod_cliente{
+    width: 95px;
+    margin-left: 1px;
+}
+
+.cabecera .fila2{
+    display: flex;
+    margin-top: 5px;
+}
+
+/* .cabecera .input_direccion {
+    margin-left: 30px;
+    height: 30px;
+    width: 300PX;
+} */
+.cabecera .txtDireccion{
+    margin-left: 5px;
+    height: 30px;
+    width: 300PX;
+}
+.cabecera .txtDistrito,.cabecera .txtProvincia{
+    width: 126px;
+}
+
+.fila2 .label{
+    padding-top: 8px !important;
+}
+.fila2 .label.txtDistrito{
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+/* .cabecera {
+    width: 80px;
+} */
+
+
+
+
+
+.caja_texto{
+    display: flex;
+}
+
+.caja_texto .label{
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.caja_texto input{
+    width: 82px;
+    height: 17px;
+    border: 1px solid black;
+}
+.cabecera_derecha .caja_texto{
+    margin-bottom: 5px;
+}
+
+
+.persona_atendio{
+    display: flex;
+
+}
+
+.persona_atendio .izquierda{
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 57px;
+}
+.persona_atendio .derecha{
+    /* border: 1px solid rgb(0, 42, 255); */
+    width: 345px;
+    height: 57px;
+}
+
+
+/* input[type=radio]{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+input[type=radio]:checked::before{
+    position: relative;
+
+     content: "\2715";
+     width: 0px;
+     height: 0px;
+     background: red;
+     display: block;
+     top:-4px;
+     left: 1px;
+     font-size: 18px;
+     font-weight: bold;
+     text-align: center;
+} */
+
+.contenedor_radio{
+    display: flex;
+    margin-left: 3PX;
+}
+input[type=radio]{
+    display: none;
+}
+input[type=radio]:checked + label::before{
+ border: 1px solid black;
+ content: "\2715";
+ font-weight: bold;
+font-size: 18PX;
+ padding-left: 3px;
+ padding-right: 3px;
+ padding-top: 1PX;
+ /* padding-bottom: 2px; */
+
+}
+
+
+.radioVacio{
+border:1px solid black;
+width: 20px;
+height: 21px;
+}
+input[type=radio]:checked + label .radioVacio{
+display: NONE;
+}
+
+
+
+
+.cont_radio_buttom{
+    display: flex;
+}
+.cont_radio_buttom .label{
+    margin-top: 5px;
+}
+
+.titulo{
+    font-weight: bold;
+}
+.persona_atendio .titulo{
+    margin-top:  5px;
+}
+
+.persona_atendio  .options{
+    margin-top: 5px;
+    display: flex;
+}
+
+.persona_atendio  .options .cont_radio_buttom{
+    margin-right: 20px;
+}
+
+.line_text{
+    border: 0px solid black;
+    border-bottom: 2px solid black;
+    background-color:transparent;
+}
+
+
+
+.cont_line_text{
+    display: flex;
+}
+.servicio_tecnico .tit2{
+    margin-top: 6px;
+}
+
+.servicio_tecnico .tit2 span{
+    font-weight: normal;
+}
+
+.servicio_tecnico .tit1{
+    margin-top: 3px;
+}
+
+.options{
+    display: flex;
+}
+
+.servicio_tecnico .plataforma{
+    justify-content: space-between;
+    /* width: 700px; */
+}
+
+.servicio_tecnico .options .cont_radio_buttom{
+    margin-top: 3px;
+    margin-left: 25px;
+}
+
+.servicio_tecnico .tit3{
+    margin-top: 7px;
+}
+
+.servicio_tecnico .servicio_realizado{
+    justify-content: space-between;
+}
+.servicio_tecnico .cont_mat_empleados{
+    margin-top: 5px;
+    display: flex;
+}
+
+.servicio_tecnico .cont_mat_empleados input[type=text]{
+    text-align: center;
+}
+
+.servicio_tecnico .cont_mat_empleados .label{
+    width: 115px;
+}
+.servicio_tecnico .cont_mat_empleados .colum .caja_texto{
+    margin-bottom: 3px;
+    /* background-color: #6ee930; */
+}
+
+.servicio_tecnico .cont_mat_empleados .column2 .label{
+    width: 87px;
+}
+
+.servicio_tecnico .cont_drop .label{
+    width: 115px;
+}
+.servicio_tecnico .cont_drop .cont_caja_drop{
+ display: flex;
+ /* border: 1px solid red; */
+ flex-direction: column;
+ text-align: center;
+}
+
+/* .servicio_tecnico .cont_drop .cont_caja_drop{} */
+.tabla{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabla thead{
+    background-color: rgb(181, 181, 181);
+    font-weight: bold;
+}
+.tabla td{
+    border: 1px solid black;
+    text-align: center;
+}
+.tabla tr{
+    height: 18px;
+}
+.group_text{
+    display: flex;
+}
+
+.tit4{
+    margin-top: 20px;
+}
+
+
+.cont_info_tec{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.cont_info_tec input{
+    border: 1px solid black;
+    text-align: center;
+}
+.group_text .text{
+    width: 120px;
+    margin-top: 3px;
+}
+.group_text input{
+    width: 50px;
+    height: 18px;
+}
+.cont_niveles{
+    margin-left: 10PX;
+
+}
+
+.cont_niveles .group_text{
+    margin-bottom: 3px;
+}
+
+.snr .text{
+ width: 40px;
+}
+
+.tit6{
+    margin-left: 8px;
+}
+
+.wifi input{
+    width: 100px;
+}
+
+.wifi .text{
+    width: 90px;
+}
+
+.wifi .txtBandsteering{
+    width: 190px;
+}
+
+.detalle_inco{
+    width: 945px;
+    height: 50px;
+}
+
+.cont_motivo_sol{
+    display: flex;
+}
+
+.cod_sol table{
+    border-collapse: collapse;
+    width: 380px;
+    margin-top: 10PX;
+}
+.cod_solucion tbody th{
+    background-color: rgb(199, 199, 197);
+    border: 1px solid black;
+}
+.cod_solucion td{
+    border: 1px solid black;
+    height: 13px;
+}
+
+.factibilidad .cont_marcado{
+    display: flex;
+}
+
+.factibilidad .text_incon{
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.factibilidad .detalle_incon{
+    width: 515px ;
+    text-align: left;
+}
+
+.factibilidad{
+    margin-left: 15px;
+    
+}
+.factibilidad .aspa{
+    margin: 0px;
+    margin-top: 4px;
+}
+.servicio_realizado .cont_radio_buttom{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.cont_cometario_final{
+    display: flex;
+}
+.cont_cometario_final p{
+    margin: 0px;
+    margin-top: 3pc;
+}
+.cont_cometario_final .tecnico{
+    width: 600px;
+    margin-right: 5px;
+}
+.cont_cometario_final .cliente{
+    width: 334px;
+}
+
+.cont_cometario_final .cont_cliente,.cont_cometario_final .cont_tecnico{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.cont_firmas{
+padding-top: 20px;
+}
+
+.cont_firmas p{
+    margin: 0px;
+}
+
+.cont_firmas .nombre{
+    font-weight: bold;
+}
+
+
+.matocaso{
+    margin-top: 1px;
+}
+
+.tabla input[type=text]{
+    border: none;
+   
+    padding-left: 3px;
+     padding-right: 3px;
+    /* width: auto; */
+    height: 25px;
+    /* background-color: #6ee930; */
+    text-align: center;
+    
+}
+.tabla td{
+    margin: 0px;
+    padding: 0px;
+}
+
+.tabla {
+    width: 950px;
+   /* margin:0;
+    padding:0;
+    background:none;
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-image:none */
+}
+
+.tabla td:nth-child(1),.tabla td:nth-child(2){
+    width: 25px;
+
+}
+.tabla td:nth-child(3){
+    width: 150px;
+}
+.tabla td:nth-child(4),.tabla td:nth-child(4) input{
+    width: 100px;
+}
+
+.tabla td:nth-child(5),.tabla td:nth-child(5) input{
+    width: 120px ;
+}
+
+.tabla td:nth-child(6),.tabla td:nth-child(6) input{
+    width: 250px ;
+}
+
+.tabla td:nth-child(7),.tabla td:nth-child(7) input{
+    width: 230px;
+}
+
+
+
+.tabla input[type=radio]{
+    margin: 0px;
+    border: none;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+
+.tabla input[type=radio]:hover{
+    background-color: #eafca8;
+}
+
+
+.tabla .radioVacio{
+    border: none;
+}
+
+.tabla input[type=radio]:checked + label::before{
+    /* border: none; */
+}

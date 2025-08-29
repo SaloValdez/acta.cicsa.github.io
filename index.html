@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acta de servicio</title>
+
+
+    <link rel="stylesheet" href="./css/acta.css">
+    <script src="./jquery/jquery.min.js"></script>
+    
+    <script src="./canvasCapture/canvasCapture.min.js"></script>
+
+    <!-- <script src="./js/acta.js"></script> -->
+    <script src="./js/index.js"></script>
+
+
+
+</head>
+<body>
+    <div class="container " id="acta">
+        <div class="acta_2" id="fondo">
+            
+
+            <div class="cabecera">
+
+                <div class="cabecera_izquierda">
+                    <div class="titulo">
+                         <div class="titulo_acta">ACTA DE SERVICIO TÉCNICO</div>
+                         <div class="numero_acta">Nª79395595</div>
+                    </div>
+                    <div class="titulo_info_cliente">
+                        INFORMACIÓN  DEL CLIENTE
+                    </div>
+                    <div class="contenedor_cliente">
+                        <div class="fila1">
+                          <div class="cont_text">
+                            <div class="label">Razón  Social/ Nombres y Apellidos</div>
+                            <input type="text" value="">
+                          </div>
+
+                          <div class="cont_text">
+                            <div class="label">Cod.Cliente</div>
+                            <input type="text" class="cod_cliente" value="">
+                          </div>
+
+                        </div>
+                        <div class="fila2">
+                            <div class="cont_text">
+                                <div class="label direccion">Dirección</div>
+                                <!-- <input type="text" class="input_direccion" value="049394893"> -->
+                                <textarea name="" class="txtDireccion" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="cont_text">
+                                <div class="label distrito">Distrito</div>
+                                <input type="text" class="txtDistrito" value="">
+                            </div>
+
+                            <div class="cont_text">
+                                <div class="label provincia">Provincia</div>
+                                <input type="text" class="txtProvincia" value="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cabecera_derecha">  
+                    <div class="caja_texto">
+                        <div class="label">Fecha</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">SOT</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Hora Inicio</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Hora Salida</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Nº Cintillo</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Plano</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Validación</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">FAT</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                    <div class="caja_texto">
+                        <div class="label">Nº BORNE FAT</div>
+                        <input type="text" class="txtFecha" value="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="persona_atendio">
+                <div class="izquierda">
+                    <div class="titulo">
+                        a)Persona que atendió al personal técnico:
+                    </div>
+                    <div class="options">
+                        <div class="cont_radio_buttom">
+                            <div class="label">Titular</div>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='radio_titular' name="atendio">
+                                <label for="radio_titular"><div class="radioVacio"></div></label>
+                            </div>
+                        </div>
+                        <div class="cont_radio_buttom">
+                            <div class="label">Usuario</div>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='radio_usuario' name="atendio">
+                                <label for="radio_usuario"><div class="radioVacio"></div></label>
+                            </div>
+                        </div>
+                        <div class="cont_radio_buttom">
+                            <div class="label">Otros</div>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='radio_otros' name="atendio">
+                                <label for="radio_otros"><div class="radioVacio"></div></label>
+                            </div>
+                        </div>
+
+                        <div class="cont_line_text">
+                            <div class="label">Relación  con titular <br> o usuario</div>
+                            <input type="text"  class="line_text" id="">
+                        </div>
+                    </div>
+                      
+
+                </div>
+                <div class="derecha">
+                    <div class="titulo">
+                        b)El cliente brindo las facilidades para la visita técnica:
+                    </div>
+                    <div class="options">
+                        <div class="cont_radio_buttom">
+                            <div class="label">Si</div>
+
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='facilidadSi' name="cliente_facilidades">
+                                <label for="facilidadSi"><div class="radioVacio"></div></label>
+                            </div>
+
+
+                        </div>
+                        <div class="cont_radio_buttom">
+                            <div class="label">No</div>
+
+
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='facilidadNo' name="cliente_facilidades">
+                                <label for="facilidadNo"><div class="radioVacio"></div></label>
+                            </div>
+
+
+
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio_tecnico">
+                <div class="titulo tit1">
+                    I. SERVICIO TECNICO
+                </div>
+                <div class="titulo tit2">
+                    1.1 PLATAFORMA <span>(aplica para residencial y claro empresas)</span>
+                </div>
+
+                <div class="options plataforma">
+                    <div class="cont_radio_buttom">
+                        <div class="label">HFC</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='plataformaHfc' name="plataforma">
+                            <label for="plataformaHfc"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">FTTH</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='plataformaFtth' name="plataforma">
+                            <label for="plataformaFtth"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">LTE</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='plataformaLte' name="plataforma">
+                            <label for="plataformaLte"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">DTH</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='plataformaDth' name="plataforma">
+                            <label for="plataformaDth"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">OTRO</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='plataformaOtro' name="plataforma">
+                            <label for="plataformaOtro"><div class="radioVacio"></div></label>
+                        </div>
+                        <input type="text"  class="line_text" id="">
+                    </div>
+                   
+
+                    <div class="cont_radio_buttom content_plan" >
+                        <div class="label">Plan: </div>
+                        <!-- <input type="radio" name="test" id=""> -->
+                        <input type="text"  class="line_text" id="">
+                    </div>
+                </div>
+
+                <div class="titulo tit3">
+                    1.2 SERVICIO REALIZADO 
+                </div>
+
+
+                <div class="options servicio_realizado">
+                    <div class="cont_radio_buttom">
+                        <div class="label">Instalación</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='servicioInsta' name="servicioRealizado">
+                            <label for="servicioInsta"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">Post Venta</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='servicioPost' name="servicioRealizado">
+                            <label for="servicioPost"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">Mantenimiento / Atención Reclamo Calidad</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='servicioManto' name="servicioRealizado">
+                            <label for="servicioManto"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">Retiro Equipos</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='servicioRetiro' name="servicioRealizado">
+                            <label for="servicioRetiro"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+                    <div class="cont_radio_buttom">
+                        <div class="label">Retiro Acometida</div>
+                        <div class="contenedor_radio" id="contenedor_radio">
+                            <input type="radio" id='servicioRetiroAco' name="servicioRealizado">
+                            <label for="servicioRetiroAco"><div class="radioVacio"></div></label>
+                        </div>
+                    </div>
+            
+                </div>
+
+
+                <div class="titulo tit3">
+                    1.3 MATERIALES EMPLEADOS
+                </div>
+
+                <div class="cont_mat_empleados">
+
+                     <div class="colum">
+                        <div class="caja_texto">
+                            <div class="label">Coaxial c/mens RG6</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Coaxial s/mens RG6</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cable Telefónico</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cable UTP</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cable Fibra INDOR</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        
+                    </div>
+
+                    <div class="colum column2">
+                        <div class="caja_texto">
+                            <div class="label">Conector RJ11</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Conector RJ45</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Conector RG6</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Conector OPT</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cable SC/APC</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        
+                    </div>
+
+                    <div class="colum column2">
+                        <div class="caja_texto">
+                            <div class="label">Control Remoto</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cable HDMI</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Roseta Telef.</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Roseta Óptica</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Anclaje P</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        
+                    </div>
+
+                    <div class="colum column2">
+                        <div class="caja_texto">
+                            <div class="label">Teléfono</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Chapa Q</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Divisor</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cintillo Rojo</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Cintillos negro</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        
+                    </div>
+
+                    <div class="colum column2">
+                        <div class="caja_texto">
+                            <div class="label">Grapas nº 8</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Grapas nº 6</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">Control</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">.................</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="caja_texto">
+                            <div class="label">.................</div>
+                            <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        
+                    </div>
+                 
+
+                </div>
+
+                <div class="cont_drop"> 
+                    <div class="caja_texto">
+                        <div class="label">Cable Fibra DROP</div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop50' name="drop">
+                                <label for="drop50"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>50m</span>
+                        </div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop80' name="drop">
+                                <label for="drop80"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>80m</span>
+                        </div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop100' name="drop">
+                                <label for="drop100"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>100m</span>
+                        </div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop150' name="drop">
+                                <label for="drop150"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>150m</span>
+                        </div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop220' name="drop">
+                                <label for="drop220"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>220m</span>
+                        </div>
+                        <div class="cont_caja_drop">
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='drop300' name="drop">
+                                <label for="drop300"><div class="radioVacio"></div></label>
+                            </div>
+                            <span>300m</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="titulo tit3">
+                    1.4 EQUIPOS INSTALADOS (I) RETIRADOS (R)
+                </div>
+
+                <table class="tabla">
+                    <thead>
+                    
+                        <td>I</td>
+                        <td>R</td>
+                        <td>DESCRIPCIÓN</td>
+                        <td>MARCA</td>
+                        <td>MODELO</td>
+                        <td>Nº SERIE</td>
+                        <td>MAC / PON</td>
+                       
+                    
+                </thead>
+                    <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                     <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                     <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                     <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                     <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                     <tr>
+                        <td> 
+                             <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='instalado1' name="instalado1">
+                                <label for="instalado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td>
+                            <div class="contenedor_radio" id="contenedor_radio">
+                                <input type="radio" id='retirado1' name="instalado1">
+                                <label for="retirado1"><div class="radioVacio"></div></label>
+                             </div>
+                        </td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                       
+                    </tr>
+                    
+                </table>
+
+
+
+
+                <div class="titulo tit4">
+                    II INFORMACIÓN TÉCNICA
+                </div>
+
+               
+                <div class="cont_info_tec">
+                    <div class="titulo_1 titulo  tit5">
+                        2.1 NIVELES
+                    </div>
+
+                    <div class="cont_niveles">
+                        <div class="group_text">
+                            <div class="text">Downstream/Rx ONT</div>
+                        <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="group_text">
+                            <div class="text">Upstream/Tx ONT</div>
+                        <input type="text" class="txtFecha" value=" ">
+                        </div>
+                    </div>
+
+                    <div class="cont_niveles snr">
+                        <div class="group_text">
+                            <div class="text">SINR</div>
+                        <input type="text" class="txtFecha" value=" ">
+                        </div>
+                        <div class="group_text">
+                            <div class="text">RSRP</div>
+                        <input type="text" class="txtFecha" value=" ">
+                        </div>
+                    </div>
+                    <div class="titulo_1 titulo  tit6">
+                        2.1 WIFI
+                    </div>
+
+                    <div class="cont_niveles wifi">
+                        <div class="group_text">
+                            <div class="text">SSDI 2.4 GHZ</div>
+                        <input type="text" class="txtFecha" value="CASA">
+                        </div>
+                        <div class="group_text">
+                            <div class="text">SSID 5.0 GHZ</div>
+                        <input type="text" class="txtFecha" value="CASA">
+                        </div>
+                        <div class="group_text">
+                            <!-- <div class="text">SSID 5.0 GHZ</div> -->
+                        <input type="text" class="txtBandsteering" value="BANDSTEERING">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="titulo tit4 matocaso">
+                    III LLENAR SOLO EN CASO DE MANTENIMIENTO/RECLAMO POR CALIDAD  (Obligatorio) <br> 
+                    3.1 Inconvenientes presentado (describir detalladamente)
+                </div>
+               <textarea class="detalle_inco" id="" >
+
+               </textarea>
+
+              
+
+                <div class="cont_motivo_sol">
+                    <div class="cod_sol">
+                        <div class="titulo tit4">
+                            3.2 ACCIONES REALIZADAS PARA ATENDER EL INCONVENIENTE (Motivo Solución)
+                           </div>
+                        <table class="cod_solucion">
+                            <tbody>
+                            <tr>
+                                <th>COD</th>
+                                <th>ACCIONES</th>
+                            </tr>
+                            </tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                          
+                        </table>
+                    </div>
+
+                    <div class="factibilidad">
+                        <div class="titulo tit4">
+                            3.3 FACTIBILIDAD DE SOLUCIÓN  (Llenado por el personal técnico)
+                        </div>
+                        <p class="aspa">El inconvienite se pudo solucuionar? (Marca con Aspa)</p>
+                        <div class="cont_marcado">
+                            <div class="option">
+                                <div class="options servicio_realizado">
+                                    <div class="cont_radio_buttom">
+                                        <div class="label">Si</div>
+                                        <div class="contenedor_radio" id="contenedor_radio">
+                                            <input type="radio" id='SolucionSi' name="mi">
+                                            <label for="SolucionSi"><div class="radioVacio"></div></label>
+                                        </div>
+                                    </div>
+                                    <div class="cont_radio_buttom">
+                                        <div class="label">No</div>
+                                        <div class="contenedor_radio" id="contenedor_radio">
+                                            <input type="radio" id='SolucionNo' name="mi">
+                                            <label for="SolucionNo"><div class="radioVacio"></div></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text_incon">
+                                <p>Indicar por que NO se pudo solucionar <br>
+                                    y si debe a causas ajenas a claro  
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <textarea class="detalle_incon">
+                    ASA
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="titulo tit4">
+                   IV. COMENTARIOS Y OBSERVACIONES
+                </div>
+
+                <div class="cont_cometario_final">
+                   <div class="cont_tecnico">
+                    <p>Llenado por el personal técnico</p>
+                    <textarea class="tecnico"">
+
+                    </textarea>
+                   </div>
+
+
+                   <div class="cont_cliente">
+                   <p> Llenado por el cliente</p>
+                    <textarea class="cliente">
+
+                    </textarea>
+                   </div>
+
+                </div>
+
+
+            </div>
+
+
+ <div class="cont_firmas">
+    ____________________________________
+    <p class="nombre">Tecnico : Salomon Valdez</p>
+    <p>Dni :  56835582</p>
+    Contratista: Cicsa
+ </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+<div class="contenedor_img_acta" id="contenedor_img_acta">
+
+</div>
+
+
+
+
+
+<button id="btnFotoActa" class="btnFotoActa">Genera acta</button>
+
+
+
+<!-- <script src="./js/acta.js"></script> -->
+</body>
+
+</html>
