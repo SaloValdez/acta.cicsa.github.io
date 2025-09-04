@@ -270,7 +270,14 @@ font-size: 18PX;
 
 }
 
+.metrosDrop {
+    margin-right: 7px;
+}
 
+.contDrop50 .contenedor_radio{
+ 
+    margin-left: -0px;
+}
 .radioVacio{
 border:1px solid black;
 width: 20px;
@@ -308,8 +315,10 @@ display: NONE;
 
 .line_text{
     border: 0px solid black;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
     background-color:transparent;
+    margin-left: 2px;
+
 }
 
 
@@ -383,8 +392,8 @@ display: NONE;
 
 /* .servicio_tecnico .cont_drop .cont_caja_drop{} */
 .tabla{
-    border: 1px solid black;
     border-collapse: collapse;
+    /* border: 2px solid rgb(214, 17, 17); */
     width: 100%;
 }
 .tabla thead{
@@ -392,8 +401,9 @@ display: NONE;
     font-weight: bold;
 }
 .tabla td{
-    border: 1px solid black;
+    border-right: 1px solid black;
     text-align: center;
+    border-bottom: 1px solid black;
 }
 .tabla tr{
     height: 13px;
@@ -508,19 +518,23 @@ display: NONE;
 }
 .cont_cometario_final p{
     margin: 0px;
-    margin-top: 3pc;
+    margin-top: 3px;
 }
 .cont_cometario_final .tecnico{
     width: 600px;
     margin-right: 5px;
+    height: 50px;
 }
 .cont_cometario_final .cliente{
     width: 334px;
+    height: 50px;
 }
 
 .cont_cometario_final .cont_cliente,.cont_cometario_final .cont_tecnico{
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+    /* padding-top: -20px; */
 }
 
 
@@ -544,7 +558,6 @@ padding-top: 20px;
 
 .tabla input[type=text]{
     border: none;
-   
     padding-left: 3px;
      padding-right: 3px;
     /* width: auto; */
@@ -560,13 +573,6 @@ padding-top: 20px;
 
 .tabla {
     width: 950px;
-   /* margin:0;
-    padding:0;
-    background:none;
-    border:none;
-    border-collapse:collapse;
-    border-spacing:0;
-    background-image:none */
 }
 
 .tabla td:nth-child(1),.tabla td:nth-child(2){
@@ -637,4 +643,15 @@ padding-top: 20px;
 
     width: 975px;
     padding: 5px;
+}
+
+.tabla2 td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+.tabla2{
+    border-collapse: collapse;
+    margin-top: 5px;
+    
 }

@@ -11,12 +11,18 @@ $(document).ready(function(){
     $objetivo = document.querySelector("#acta");
     $contenedorCanvas = document.querySelector("#contenedor_img_acta"); // En dónde ponemos el elemento canvas
 
-    html2canvas($objetivo) // Llamar a html2canvas y pasarle el elemento
+    html2canvas($objetivo,{
+       dpi: window.devicePixelRatio*1,
+        scale:1.5,
+        width:1100,
+        heigth:1800,
+
+    }) // Llamar a html2canvas y pasarle el elemento
     .then(canvas => {
             // Cuando se resuelva la promesa traerá el canvas
             $contenedorCanvas.appendChild(canvas); // Lo agregamos como hijo del div
             let enlace = document.createElement('a');
-
+	          //  window.devicePixelRatio();
       
             // Convertir la imagen a Base64
             enlace.href = canvas.toDataURL();
