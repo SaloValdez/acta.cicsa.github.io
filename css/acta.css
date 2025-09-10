@@ -87,6 +87,11 @@ display: flex;
     width: 190px;
     height: 230px;
     /* border: 1px solid red; */
+    /* text-align: center; */
+}
+
+.cabecera_derecha input{
+    text-align: center;
 }
 .cabecera .titulo{
     /* background-color: rgba(127, 255, 212, 0.444); */
