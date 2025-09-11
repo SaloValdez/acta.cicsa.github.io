@@ -578,6 +578,10 @@ padding-top: 20px;
 
 .tabla {
     width: 950px;
+    border-top: 1px 
+solid black;
+border-left: 1px solid black;
+    
 }
 
 .tabla td:nth-child(1),.tabla td:nth-child(2){
@@ -650,7 +654,7 @@ padding-top: 20px;
     padding: 5px;
 }
 
-.tabla2 td{
+/* .tabla2 td{
     border-bottom: 1px solid black;
     padding: 10px;
     border-right: 1px solid black;
@@ -659,4 +663,25 @@ padding-top: 20px;
     border-collapse: collapse;
     margin-top: 5px;
     
+} */
+
+.cod_solucion input{
+    text-align: center;
+    /* display:inline-block; */
+    width: 100px;
+    border: none;
+}
+
+.cod_solucion td:nth-child(1){
+    width: 100px;
+}
+
+.cod_solucion td:nth-child(2){
+    width: 100px;
+}
+
+
+.cod_solucion td:nth-child(2) input{
+    width: 260px;
+    /* border: 1px solid black; */
 }
