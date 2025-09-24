@@ -1,16 +1,20 @@
-$(document).ready(function(){
+// console.log('Hola mundo desde index.js');
+// $(".txtRazonSocial").click( function(){
+//   console.log('Acción ejecutada!')
+// })
 
+// const today = new Date()
+// today.toLocaleDateString() // de acuerdo a tu idioma local
+//  // formato fecha en Colombia, por ejemplo 9/1/2021
 
-
-const today = new Date()
-today.toLocaleDateString() // de acuerdo a tu idioma local
- // formato fecha en Colombia, por ejemplo 9/1/2021
-
-
-$("#txtFecha").val(today.toLocaleDateString("es-CO"));
+const fecha = new Date();
+// console.log(fecha.toLocaleDateString()); // Salida de ejemplo: 24/9/2025
+// console.log(fecha.toLocaleTimeString()); // Salida de ejemplo: 6:00:00
+$("#txtFecha").val(fecha.toLocaleDateString());
 
   $(".btnFotoActa").click(function(){
-
+    console.log("Generar imagen del acta");
+  // alert("Se generará la imagen del acta, por favor espere...");
     generar_actaImagen();
    });
 
@@ -45,4 +49,7 @@ $("#txtFecha").val(today.toLocaleDateString("es-CO"));
 
 
 
-});
+
+// const fecha = new Date();
+// console.log(fecha.toLocaleDateString()); // Salida de ejemplo: 24/9/2025
+// console.log(fecha.toLocaleTimeString()); // Salida de ejemplo: 6:00:00

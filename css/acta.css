@@ -685,3 +685,14 @@ border-left: 1px solid black;
     width: 260px;
     /* border: 1px solid black; */
 }
+
+.cont_firmas input{
+    border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+.cont_firmas input[type=text]:focus{
+   background-color: #eafca8;
+  
+}

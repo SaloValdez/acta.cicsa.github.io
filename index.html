@@ -12,8 +12,7 @@
     <script src="./canvasCapture/canvasCapture.min.js"></script>
 
     <!-- <script src="./js/acta.js"></script> -->
-    <script src="./js/index.js"></script>
-
+    
 
 
 </head>
@@ -36,7 +35,7 @@
                         <div class="fila1">
                           <div class="cont_text">
                             <div class="label">Razón  Social/ Nombres y Apellidos</div>
-                            <input type="text" value="">
+                            <input type="text" value="" id="razon_social" class="txtRazonSocial">
                           </div>
 
                           <div class="cont_text">
@@ -707,7 +706,7 @@
                             </tr>
                           
                         </table>
-                         <datalist id="codigosSolucion">
+                         <datalist id="codigosSolucion" class="datalists">
                                     <option value="1">F1 01</option>
                                     <option value="2">F1 02</option>
                                     <option value="3">F1 03</option>
@@ -759,7 +758,9 @@
                 <div class="cont_cometario_final">
                    <div class="cont_tecnico">
                     <p>Llenado por el personal técnico</p>
-                    <textarea class="tecnico""></textarea>
+                    <textarea class="tecnico"">Código autorización drop:
+Código autorizacion Switch:
+                    </textarea>
                    </div>
 
 
@@ -796,9 +797,9 @@
 </table> -->
 
  <div class="cont_firmas">
-    ____________________________________
-    <p class="nombre">Tecnico : Salomon Valdez</p>
-    <p>Dni :  56835582</p>
+    ________________________________________________________ <br>
+    <span>Nombre : </span><input type="text" value=""><br>
+    <span>Dni:</span><input type="text" value=""></p>
     Contratista: Cicsa
  </div>
 
@@ -828,7 +829,7 @@
 
 
 
-<!-- <script src="./js/acta.js"></script> -->
+<script src="./js/index.js"></script>
 </body>
 
 </html>
