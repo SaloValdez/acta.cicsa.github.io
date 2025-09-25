@@ -14,12 +14,34 @@ $("#txtFecha").val(fecha.toLocaleDateString());
 
   $(".btnFotoActa").click(function(){
     console.log("Generar imagen del acta");
-  // alert("Se generará la imagen del acta, por favor espere...");
-    generar_actaImagen();
+  
+  let  sot = $("#sot").val();
+    // alert("Se generará la imagen del acta, por favor espere...");
+    generar_actaImagen(sot);
+
+
+
+ let  texto = $("#razon_social").val();
+
+   
+  navigator.clipboard.writeText(texto);
+  console.log('Contenido copiado al portapapeles');
+   
+     
+
+
+
+
+
+
+
+
+
+
    });
 
 
-   function generar_actaImagen(){
+   function generar_actaImagen(sot){
 
       
     $objetivo = document.querySelector("#acta");
@@ -39,12 +61,14 @@ $("#txtFecha").val(fecha.toLocaleDateString());
 	          //  window.devicePixelRatio();
       var aleatorio = Math.random()
                 // return false;
-                enlace.download = aleatorio+"."+"png"
+                enlace.download = sot +"."+"png"
             // Convertir la imagen a Base64
             enlace.href = canvas.toDataURL();
             // Hacer click en él
             enlace.click();
       });
+
+  
     }
 
 
@@ -53,3 +77,8 @@ $("#txtFecha").val(fecha.toLocaleDateString());
 // const fecha = new Date();
 // console.log(fecha.toLocaleDateString()); // Salida de ejemplo: 24/9/2025
 // console.log(fecha.toLocaleTimeString()); // Salida de ejemplo: 6:00:00
+
+
+//  let texto = document.getElementById('razon_social').innerHTML;
+
+
