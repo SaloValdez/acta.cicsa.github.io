@@ -480,7 +480,7 @@ display: NONE;
 
 .cod_sol table{
     border-collapse: collapse;
-    width: 380px;
+    /* width: 550px; */
     margin-top: 10PX;
 }
 .cod_solucion tbody th{
@@ -492,6 +492,11 @@ display: NONE;
     height: 13px;
 }
 
+
+
+
+
+
 .factibilidad .cont_marcado{
     display: flex;
 }
@@ -502,8 +507,9 @@ display: NONE;
 }
 
 .factibilidad .detalle_incon{
-    width: 515px ;
+    width: 379px ;
     text-align: left;
+    height: 42px;
 }
 
 .factibilidad{
@@ -646,7 +652,6 @@ border-left: 1px solid black;
     padding-top: 5px;
     /* padding-bottom: 2px; */
 }
-
 .container{
     /* border: 1px solid red; */
 
@@ -654,45 +659,109 @@ border-left: 1px solid black;
     padding: 5px;
 }
 
-/* .tabla2 td{
-    border-bottom: 1px solid black;
-    padding: 10px;
-    border-right: 1px solid black;
-}
-.tabla2{
-    border-collapse: collapse;
-    margin-top: 5px;
-    
-} */
 
 .cod_solucion input{
     text-align: center;
     /* display:inline-block; */
-    width: 100px;
+    width: 40px;
     border: none;
 }
 
-.cod_solucion td:nth-child(1){
-    width: 100px;
-}
 
-.cod_solucion td:nth-child(2){
-    width: 100px;
-}
 
 
 .cod_solucion td:nth-child(2) input{
-    width: 260px;
+    width: 501px;
     /* border: 1px solid black; */
+    text-align: left;
 }
 
 .cont_firmas input{
-    border: none;
       text-transform: uppercase;
       font-weight: bold;
+      width: 350px;
+      border: none;
 }
 
 .cont_firmas input[type=text]:focus{
    background-color: #eafca8;
+
   
 }
+
+/* TODO:  Caja busqueda nombre y dni tecnico*/
+.cont_bus{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.contratista{
+    padding-top: 5px;
+}
+.resultadoTecnicos{
+    align-items: center;
+    position: relative;
+}
+
+
+ .result-box{
+    max-height: 100px;
+    overflow-y: scroll;
+    background-color: rgb(248, 248, 140);
+    border-radius: 0px 0px 5px 5px;
+    width:500px;
+    position: absolute;
+ }
+
+  .result-box ul{
+    list-style: none;
+    padding: 0px 0px;
+    border-top: 1px solid #9a9696;
+    padding: 0px 5px;
+ }
+
+ .result-box ul li{
+    padding: 5px 0px;
+   border-radius: 3px;
+    font-size: 18px;
+    padding: 5px 5px ;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(211, 197, 70);
+    padding: 5px 10px;
+ }
+
+ .result-box ul li:hover{
+    background-color: #ebe9d4;
+ }
+
+ /* TODO:  Caja busqueda cod SOLUCION::::::::::::::: */
+
+ .lista_cod_solucion{
+     max-height: 100px;
+    overflow-y: scroll;
+    background-color: rgb(248, 248, 140);
+    border-radius: 0px 0px 5px 5px;
+    width:500px;
+    position: absolute;
+ }
+
+  .lista_cod_solucion ul{
+    list-style: none;
+    padding: 0px 0px;
+    border-top: 1px solid #9a9696;
+    padding: 0px 5px;
+  }
+
+  .lista_cod_solucion ul li{
+    padding: 5px 0px;
+   border-radius: 3px;
+    font-size: 18px;
+    padding: 5px 5px ;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(211, 197, 70);
+    padding: 5px 10px;
+ }
+
+  .lista_cod_solucion ul li:hover{
+    background-color: #ebe9d4;
+ }
