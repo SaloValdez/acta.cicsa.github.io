@@ -60,50 +60,50 @@ const tecnicos = [
         nombre: "ANGEL EDINSON BENITO MORA 00000000",
         dni: "23569863" ,
     },{
-        nombre: "APARICIO MENESES ANTHONY WALTER",
+        nombre: "APARICIO MENESES ANTHONY WALTER 00000000",
         dni: "" ,
     },{
-        nombre: "ARAPA BERNEDO RAUL ROSSEL ",
+        nombre: "ARAPA BERNEDO RAUL ROSSEL 00000000",
         dni: "23569863" ,
     },{
-        nombre: "CASTILLO CHALLA JAIME JUNNIOR ",    
+        nombre: "CASTILLO CHALLA JAIME JUNNIOR 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "FLORES FLORES JULIO ALBERTO ",    
+        nombre: "FLORES FLORES JULIO ALBERTO 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "GARCIA SARCA CRISTIAN IVAN ",    
+        nombre: "GARCIA SARCA CRISTIAN IVAN 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "ILLANES CHAMBI JHON RONALD ",    
+        nombre: "ILLANES CHAMBI JHON RONALD 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "MAMANI LOPEZ JULIO ELIAS ",    
+        nombre: "MAMANI LOPEZ JULIO ELIAS 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "OLLACHICA BAUTISTA ROSBERT ALCIDES ",    
+        nombre: "OLLACHICA BAUTISTA ROSBERT ALCIDES 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "SALOMON VALDEZ PACOHUANACO ",    
+        nombre: "SALOMON VALDEZ PACOHUANACO 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "TENUCO CALDERON ROY DARIO ",    
+        nombre: "TENUCO CALDERON ROY DARIO 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "TICONA AQUIMA JONATHAN DIEG ",    
+        nombre: "TICONA AQUIMA JONATHAN DIEG 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "TITO GUERRA VICTOR MANUEL ",    
+        nombre: "TITO GUERRA VICTOR MANUEL 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "TORRES HUAMANI YERON",    
+        nombre: "TORRES HUAMANI YERON 00000000",    
         dni: "23569863" ,
     }
     ,{
-        nombre: "VARGAYA QUISPE GENNODY YOEL ",    
+        nombre: "VARGAYA QUISPE GENNODY YOEL 00000000",    
         dni: "23569863" ,
     },{
-        nombre: "VICTOR JHONY SAIRE QUISPE ",    
+        nombre: "VICTOR JHONY SAIRE QUISPE 00000000",    
         dni: "23569863" ,
     }
 ];
